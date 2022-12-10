@@ -1,0 +1,346 @@
+/*universal styling*/
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    font-size: 16px;
+    color: #101126;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mobile{
+    display: none;
+}
+
+h4, h1, h3{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h4{
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 768px){
+    .screen{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mobile{
+        display: block;
+        width: 30px;
+        padding-right: 3%;
+        padding-top: 10px;
+    }
+
+    h3{
+        font-size: 1.875rem;
+    }
+
+    p, span{
+        font-size: .875rem;
+    }
+}
+
+
+/*styling for navigation*/
+header, nav{
+    max-width: 100%;
+    background-color: #f5fbff;
+    text-align: center;
+}
+
+ul{
+    padding: 1.25rem 0;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+    font-size: .875rem;
+}
+
+a{
+    text-decoration: none;
+    color:#101126;
+}
+
+li a:hover{
+    border-bottom: 1px solid #101126;
+}
+
+/*styling for the header*/
+header{
+    padding: 0 20%;
+}
+
+.head{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+h1{
+    font-size: 5.3125rem;
+    margin: 1.5625rem 0 2.55rem 0;
+}
+
+.img-container{
+    background-image: url(images/px-Oving-m57zvXXbkDF0JQlL.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 700px;
+    margin-bottom: 5rem;
+}
+
+.head h3{
+    padding: 0 5%;
+    margin-bottom: 2.5rem;
+}
+
+.head a{
+    color: white;
+    background-color: #101126;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+
+.head a:hover{
+    background-color: #17183d;
+}
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 3.125rem;
+    }
+
+    header{
+        padding: 0;
+    }
+
+    .head{
+        width: 390px;
+    }
+
+    .img-container{
+        height: 450px;
+        margin-bottom: 1.875rem;
+    }
+
+    .head a{
+        border-radius: 0;
+    }
+
+    .head h3{
+        padding: 0;
+    }
+}
+
+/*styling for the coaching article*/
+#coaching{
+    display: flex;
+    column-gap: 20%;
+    max-width: 100%;
+    padding: 150px 5%;
+}
+
+.coaching-section{
+    display: flex;
+    column-gap: 20%;
+    width: 80%;
+    line-height: 1.2;
+}
+
+.technique{
+    width: 31.25rem;
+}
+
+.goals{
+    width: 15.625rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    line-height: 1.4;
+}
+
+@media only screen and (max-width: 768px){
+    #coaching{
+        justify-content: center;
+        padding: 3.125rem 0;
+    }
+
+    .coaching-section{
+        flex-direction: column;
+        justify-content: center;
+        width: 390px;
+        row-gap: 70px;
+    }
+
+    .technique, .goals{
+        width: 100%;
+    }
+
+    .goals{
+        row-gap: 10px;
+    }
+}
+
+/*styling for the testimony section*/
+#testimonial{
+    display: flex;
+    background-color: #f5fbff;
+    padding: 100px 5%;
+    max-width: 100%;
+}
+
+.testimony{
+    display: flex;
+    column-gap: 20%;
+    line-height: 1.4;
+    margin-top: 35px;
+}
+
+.testimony span{
+    display: block;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px){
+    #testimonial{
+        justify-content: center;
+        padding: 3.125rem 0;
+    }
+
+    .testimonial-section{
+        width: 370px;
+    }
+
+    .testimony{
+        flex-direction: column;
+        row-gap: 20px;
+        font-size: .875rem;
+    }
+}
+
+/*phylosophy section styling*/
+section{
+    text-align: center;
+    background-color:#101126;
+    color: white;
+    padding: 100px 0;
+}
+
+section div{
+    width: 80%;
+    margin: 0 auto;
+}
+
+section h3{
+    margin-bottom: 50px;
+}
+
+section a{
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+
+section a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (max-width: 768px){
+    section{
+        padding: 3.125rem 0;
+    }
+
+    section div{
+        width: 370px;
+    }
+ 
+}
+
+/*styling for the footer*/
+
+footer{
+    background-color: #f5fbff;
+
+}
+
+.footer-info{
+    padding: 100px 10% 100px 5%;
+    display: flex;
+}
+
+.data{
+    flex: 1;
+}
+
+footer h3{
+    font-size: 1.875rem;
+    margin-bottom: 10px;
+}
+
+.social{
+
+    display: flex; 
+    align-items: center;
+}
+.fa{
+    color: #101126;
+    font-size: 1.375rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.fa-facebook{
+    background: #101126;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    padding: 5px 1px 0 1px;
+    font-size: 1rem;
+  }
+
+@media only screen and (max-width: 768px){
+    .footer-info{
+        margin: 0 auto;
+        padding: 3.125rem 0;
+        flex-direction: column;
+        width: 370px;
+        row-gap: 20px;
+    }
+
+    footer h3{
+        font-size: 1.5625rem;
+    }
+}
+
+/*style for mobile screens*/
+
+@media only screen and (max-width: 480px){
+    header, .coaching-section, .testimonial-section, section div, .footer-info{
+        width: 95%;
+    }
+}
