@@ -277,6 +277,10 @@ section a:hover{
     section div{
         width: 370px;
     }
+    
+    section a{
+        border-radius: 0;
+    }
  
 }
 
