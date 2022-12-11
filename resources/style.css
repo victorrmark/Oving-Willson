@@ -340,7 +340,7 @@ footer h3{
 /*style for mobile screens*/
 
 @media only screen and (max-width: 480px){
-    header, .coaching-section, .testimonial-section, section div, .footer-info{
+    .head, .coaching-section, .testimonial-section, section div, .footer-info{
         max-width: 90%;
     }
 }
